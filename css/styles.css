@@ -145,3 +145,23 @@ a {
     padding-left: 0;
   }
 }
+
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--primary-color);
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center; /* W osi x */
+  align-items: center; /* W osi y */
+}
