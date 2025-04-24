@@ -160,6 +160,7 @@ a {
   width: 40px;
   height: 40px;
 }
+
 .icon--small {
   width: 30px;
   height: 30px;
@@ -172,14 +173,15 @@ a {
 .icon--white {
   fill: #fff;
 }
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
   height: 64px;
   border-radius: 100%;
   display: inline-flex;
-  justify-content: center; /* W osi x */
-  align-items: center; /* W osi y */
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-container--accent {
@@ -530,4 +532,37 @@ a {
     justify-self: start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
 }
