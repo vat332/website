@@ -877,3 +877,11 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Sign-up Callout */
+
+.callout-signup {
+  width: 100%;
+  
+  transform: translateY(5rem);
+}
