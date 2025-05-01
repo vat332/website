@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "source": "js/main.js",
-  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "module": "dist/module.js",
   "devDependencies": {
-    "parcel": "^2.14.4"
+    "parcel": "^2.14.4",
+    "svgo": "^3.3.2"
   }
 }
